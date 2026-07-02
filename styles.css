@@ -40,7 +40,7 @@ img {
     --ff-barlow: "Barlow Semi Condensed", sans-serif;
     
         /* FONT SIZE */
-    --fs-13: 13px;
+    --fs-13: 0.81rem;
 
         /* FONT WEIGHT */
     --fw-500: 500;
@@ -52,14 +52,102 @@ img {
 body{
     font-family: var(--ff-barlow);
     font-size: var(--fs-13);
-    font-weight: var(--fw-500);
-    background-color: var(--white);
+    font-weight: var(--fw-500);    
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
+    background:
+        linear-gradient(
+            to bottom,
+            var(--grey-100) 0%,
+            transparent 20%
+        ),
+        linear-gradient(
+            to right,
+            var(--grey-100) 10%,
+            var(--grey-200) 80%
+        );
 }
 /* ==============================================
             LAYOUT
+================================================== */
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.95rem;
+    padding-inline: 2rem;
+    padding-block: 4.5rem;
+}
+.testimonial{
+    padding-block: 2rem;
+    padding-inline: 2rem 2.3rem;
+    background-color: var(--purple-500);
+    color: var(--white);
+    border-radius: 0.5rem;
+}
+.profile-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; 
+}
+.profile-img{
+    width: 1.88rem;
+    height: 1.88rem;
+    border-radius: 50%;
+    border: 0.06rem solid var(--white);
+}
+.profile-name{
+    font-size: 0.73rem;
+    font-weight: var(--fw-600);
+}
+.profile-title{
+    font-size: 0.6rem;
+    margin-block-start: 0.3rem
+}
+.experience{
+    margin-block-start: 1.1rem;
+    font-size: 1.05rem;
+    font-weight: var(--fw-600);
+    line-height: 1.49rem;
+}
+.testimonial-text{
+    margin-block-start: 0.8rem;
+    font-size: 0.71rem;
+    line-height: 1.15rem;
+    font-weight: var(--fw-500);
+}
+.testimonial:nth-child(2){
+    background-color: var(--grey-500);
+}
+.testimonial:nth-child(3),
+.testimonial:nth-child(5){
+    background-color: var(--white);
+    color: var(--grey-500);
+}
+.testimonial:nth-child(4){
+    background-color: var(--dark-blue);
+}
+footer{
+    color: var(--grey-500);
+    font-weight: var(--fw-500);
+}
+footer a{
+    text-decoration: none;
+    color: var(--purple-500);
+    font-weight: var(--fw-600);
+}
+footer a:hover,
+footer a:focus-visible{
+    color: var(--dark-blue);
+}
+footer a:focus-visible{
+    outline: 0.06rem solid var(--dark-blue);
+    outline-offset: 0.06rem;
+}
+/* ==============================================
+            DESKTOP LAYOUT
 ================================================== */
