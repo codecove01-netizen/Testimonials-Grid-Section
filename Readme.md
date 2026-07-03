@@ -37,7 +37,7 @@
 <h3 align="center">💻 Desktop View</h3>
 
 <p align="center">
-  <img src="./testimonialDesktop.png" alt="Desktop Preview" width="900">
+  <img src="./images/testimonialDesktop.png" alt="Desktop Preview" width="900">
 </p>
 
 <br>
@@ -45,7 +45,7 @@
 <h3 align="center">📱 Mobile View</h3>
 
 <p align="center">
-  <img src="./testimonialMobile.png" alt="Mobile Preview" width="250">
+  <img src="./images/testimonialMobile.png" alt="Mobile Preview" width="250">
 </p>
 
 ---
