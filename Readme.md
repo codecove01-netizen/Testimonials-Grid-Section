@@ -95,7 +95,7 @@ One thing I learned was how useful `grid-template-areas` can be for complex layo
     "daniel daniel jonathan kira"
     "jeanette patrick patrick kira";
 }
-
+```
 ---
 
 ## 🎯 The Challenge
