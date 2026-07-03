@@ -32,6 +32,7 @@ img {
     --grey-100: hsl(214, 17%, 92%);
     --grey-200: hsl(0, 0%, 81%);
     --grey-400: hsl(224, 10%, 45%);
+    --grey-400-accent: hsl(223, 31%, 77%);
     --grey-500: hsl(217, 19%, 35%);
     --dark-blue: hsl(219, 29%, 14%);
     --black: hsl(0, 0%, 7%);
@@ -82,12 +83,11 @@ body{
     align-items: center;
     gap: 1.95rem;
     padding-inline: 2rem;
-    padding-block: 4.5rem;
+    padding-block: 4.5rem 0;
 }
 .testimonial{
     padding-block: 2rem;
     padding-inline: 2rem 2.3rem;
-    background-color: var(--purple-500);
     color: var(--white);
     border-radius: 0.5rem;
 }
@@ -124,6 +124,12 @@ body{
     line-height: 1.15rem;
     font-weight: var(--fw-500);
 }
+.testimonial:nth-child(1){
+    background-color: var(--purple-500);
+    background-image: url("../images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 4vw;
+}
 .testimonial:nth-child(2){
     background-color: var(--grey-500);
 }
@@ -138,6 +144,7 @@ body{
 
 /*  FOOTER */
 footer{
+    margin-block-start: 4rem;
     color: var(--grey-500);
     font-weight: var(--fw-500);
 }
@@ -159,17 +166,35 @@ footer a:focus-visible{
             DESKTOP LAYOUT
 ================================================== */
 @media screen and (min-width: 48rem){
+    body{
+        background-color: var(--white);
+    }
     .testimonials{
+        margin-block-start: 2rem;
         display: grid;
         grid-template-areas:
             "daniel daniel jonathan kira"
             "jeanette patrick patrick kira";
+        place-items: center;
+        grid-template-columns: repeat(4, 1fr);
+        max-inline-size: 70.4rem;
+        padding-inline: 0.6rem 0rem;
+        column-gap: 1.9rem;
+        row-gap: 1.5rem;
+    }
+    .testimonial{
+        box-shadow: 2rem 2rem 2rem var(--grey-400-accent);
+    }
+    .profile-name{
+        font-size: 0.64rem;
+
     }
     .testimonial:nth-child(1){
         grid-area: daniel;
     }
     .testimonial:nth-child(2){
         grid-area: jonathan;
+        padding-inline:2rem 1.9rem
     }
     .testimonial:nth-child(3)
     {
@@ -177,6 +202,7 @@ footer a:focus-visible{
     }
     .testimonial:nth-child(4){
         grid-area: patrick;
+        padding-inline:2rem 1.9rem
     }
     .testimonial:nth-child(5){
         grid-area: kira; 
