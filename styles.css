@@ -184,6 +184,8 @@ footer a:focus-visible{
     .profile-name{
         font-size: 0.64rem;
     }
+    
+    /* TESTIMONIALS */
     .testimonial:nth-child(1){
         grid-area: daniel;
         background-image: url("../images/bg-pattern-quotation.svg");
