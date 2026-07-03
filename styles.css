@@ -32,7 +32,7 @@ img {
     --grey-100: hsl(214, 17%, 92%);
     --grey-200: hsl(0, 0%, 81%);
     --grey-400: hsl(224, 10%, 45%);
-    --grey-400-accent: hsl(223, 31%, 77%);
+    --grey-400-accent: hsl(225, 25%, 76%);
     --grey-500: hsl(217, 19%, 35%);
     --dark-blue: hsl(219, 29%, 14%);
     --black: hsl(0, 0%, 7%);
@@ -126,9 +126,6 @@ body{
 }
 .testimonial:nth-child(1){
     background-color: var(--purple-500);
-    background-image: url("../images/bg-pattern-quotation.svg");
-    background-repeat: no-repeat;
-    background-position: top right 4vw;
 }
 .testimonial:nth-child(2){
     background-color: var(--grey-500);
@@ -170,7 +167,6 @@ footer a:focus-visible{
         background-color: var(--white);
     }
     .testimonials{
-        margin-block-start: 2rem;
         display: grid;
         grid-template-areas:
             "daniel daniel jonathan kira"
@@ -183,21 +179,22 @@ footer a:focus-visible{
         row-gap: 1.5rem;
     }
     .testimonial{
-        box-shadow: 2rem 2rem 2rem var(--grey-400-accent);
+        box-shadow: 0rem 2rem 3rem var(--grey-400-accent);
     }
     .profile-name{
         font-size: 0.64rem;
-
     }
     .testimonial:nth-child(1){
         grid-area: daniel;
+        background-image: url("../images/bg-pattern-quotation.svg");
+        background-repeat: no-repeat;
+        background-position: top right 15%;
     }
     .testimonial:nth-child(2){
         grid-area: jonathan;
         padding-inline:2rem 1.9rem
     }
-    .testimonial:nth-child(3)
-    {
+    .testimonial:nth-child(3){
         grid-area: jeanette;
     }
     .testimonial:nth-child(4){
